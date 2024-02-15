@@ -38,7 +38,7 @@ const FetchComponent = () => {
     <Container>
       <Row className="justify-content-center">
         <Col 
-        xs={4} >
+        xs={4} md={6} >
           <h2>Articoli:</h2>
         </Col>
       </Row>

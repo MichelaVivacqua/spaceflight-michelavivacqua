@@ -10,8 +10,9 @@ interface ArticleProps {
 
 const Article = ({ articleData }: ArticleProps) => {
   return (
-    <Link to={`/articles/${articleData.id}`}>
-    <Col xs={12} md={4} className="text-center">
+    
+    <Col xs={12} sm={6} md={4} lg={3}>
+        <Link to={`/articles/${articleData.id}`}>
       <Card>
         <Card.Img variant="top" src={articleData.image_url} />
         <Card.Body>
@@ -19,8 +20,9 @@ const Article = ({ articleData }: ArticleProps) => {
           <Card.Text>{articleData.published_at}</Card.Text>
         </Card.Body>
       </Card>
+      </Link>
     </Col>
-    </Link>
+   
   );
 };
 
